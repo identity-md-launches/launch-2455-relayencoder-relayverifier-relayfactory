@@ -1,0 +1,158 @@
+{
+  "checkedAt": "2026-10-23T03:33:21.136Z",
+  "viewports": [
+    {
+      "width": 1440,
+      "home": {
+        "brand": {
+          "x": 120,
+          "y": 24,
+          "w": 117,
+          "h": 44
+        },
+        "svgs": [
+          {
+            "viewBox": "0 0 151 36",
+            "w": 117,
+            "h": 28
+          }
+        ],
+        "footerSymbol": {
+          "x": 120,
+          "y": 733,
+          "w": 20,
+          "h": 20
+        },
+        "ctaBottom": 511,
+        "viewportHeight": 844,
+        "overflow": 0
+      },
+      "projectsStatus": "Verified public reads are available. Creating, proposing, funding and forking stay disabled while production gates remain open. Live profile checks: NOT_RUN.",
+      "projectsOverflow": 0,
+      "rpcOrigins": [
+        "https://ethereum-rpc.publicnode.com",
+        "https://eth.drpc.org"
+      ],
+      "rpcRequests": 144,
+      "failedRequests": [
+        "http://127.0.0.1:4191/preview/abi/RelayVerifier.json net::ERR_ABORTED",
+        "http://127.0.0.1:4191/preview/assets/index-KXClE2Qb.js net::ERR_ABORTED",
+        "http://127.0.0.1:4191/preview/favicon-32.png net::ERR_ABORTED"
+      ],
+      "httpErrors": [
+        "403 https://ethereum-rpc.publicnode.com/ {\"jsonrpc\":\"2.0\",\"error\":{\"code\":-32602,\"message\":\"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"},\"id\":8}\n"
+      ],
+      "errors": [
+        "Failed to load resource: the server responded with a status of 403 ()"
+      ],
+      "payButtons": [
+        {
+          "text": "Create project",
+          "disabled": true
+        }
+      ],
+      "mainTextSample": "Projects\nCreate project\n\nBuild in rounds. Browse public goals, inspect outputs, then choose what to move forward.\n\nVerified public reads are available. Creating, proposing, funding and forking stay disabled while production gates remain open. Live profile checks: NOT_RUN.\n\nNo projects have been created on Ethereum yet.\n\nDeployment identity, transaction records and limitations"
+    },
+    {
+      "width": 390,
+      "home": {
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "w": 117,
+          "h": 44
+        },
+        "svgs": [
+          {
+            "viewBox": "0 0 151 36",
+            "w": 117,
+            "h": 28
+          }
+        ],
+        "footerSymbol": {
+          "x": 16,
+          "y": 796,
+          "w": 20,
+          "h": 20
+        },
+        "ctaBottom": 591,
+        "viewportHeight": 844,
+        "overflow": 0
+      },
+      "projectsStatus": "Verified public reads are available. Creating, proposing, funding and forking stay disabled while production gates remain open. Live profile checks: NOT_RUN.",
+      "projectsOverflow": 0,
+      "rpcOrigins": [
+        "https://ethereum-rpc.publicnode.com",
+        "https://eth.drpc.org"
+      ],
+      "rpcRequests": 144,
+      "failedRequests": [
+        "http://127.0.0.1:4191/preview/abi/RelayEncoder.json net::ERR_ABORTED",
+        "http://127.0.0.1:4191/preview/public-read-transport.json net::ERR_ABORTED"
+      ],
+      "httpErrors": [
+        "403 https://ethereum-rpc.publicnode.com/ {\"jsonrpc\":\"2.0\",\"error\":{\"code\":-32602,\"message\":\"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"},\"id\":8}\n"
+      ],
+      "errors": [
+        "Failed to load resource: the server responded with a status of 403 ()"
+      ],
+      "payButtons": [
+        {
+          "text": "Create project",
+          "disabled": true
+        }
+      ],
+      "mainTextSample": "Projects\nCreate project\n\nBuild in rounds. Browse public goals, inspect outputs, then choose what to move forward.\n\nVerified public reads are available. Creating, proposing, funding and forking stay disabled while production gates remain open. Live profile checks: NOT_RUN.\n\nNo projects have been created on Ethereum yet.\n\nDeployment identity, transaction records and limitations"
+    },
+    {
+      "width": 320,
+      "home": {
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "w": 117,
+          "h": 44
+        },
+        "svgs": [
+          {
+            "viewBox": "0 0 151 36",
+            "w": 117,
+            "h": 28
+          }
+        ],
+        "footerSymbol": {
+          "x": 16,
+          "y": 852,
+          "w": 20,
+          "h": 20
+        },
+        "ctaBottom": 646,
+        "viewportHeight": 844,
+        "overflow": 0
+      },
+      "projectsStatus": "Verified public reads are available. Creating, proposing, funding and forking stay disabled while production gates remain open. Live profile checks: NOT_RUN.",
+      "projectsOverflow": 0,
+      "rpcOrigins": [
+        "https://ethereum-rpc.publicnode.com",
+        "https://eth.drpc.org"
+      ],
+      "rpcRequests": 144,
+      "failedRequests": [
+        "http://127.0.0.1:4191/preview/abi/RelayFactory.json net::ERR_ABORTED"
+      ],
+      "httpErrors": [
+        "403 https://ethereum-rpc.publicnode.com/ {\"jsonrpc\":\"2.0\",\"error\":{\"code\":-32602,\"message\":\"Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\"},\"id\":8}\n"
+      ],
+      "errors": [
+        "Failed to load resource: the server responded with a status of 403 ()"
+      ],
+      "payButtons": [
+        {
+          "text": "Create project",
+          "disabled": true
+        }
+      ],
+      "mainTextSample": "Projects\nCreate project\n\nBuild in rounds. Browse public goals, inspect outputs, then choose what to move forward.\n\nVerified public reads are available. Creating, proposing, funding and forking stay disabled while production gates remain open. Live profile checks: NOT_RUN.\n\nNo projects have been created on Ethereum yet.\n\nDeployment identity, transaction records and limitations"
+    }
+  ]
+}

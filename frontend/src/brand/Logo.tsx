@@ -1,9 +1,5 @@
 import geometry from "./geometry.json";
-import { SITE_NAME } from "../config";
-
-const SITE_EXPANDED_NAME = "Stepstoke";
-const SITE_SLOGAN = "Build on every step.";
-const SITE_X_URL = "https://x.com/stepstoke";
+import { SITE_EXPANDED_NAME, SITE_NAME, SITE_SLOGAN, SITE_X_URL } from "../config";
 
 // The STEPS marks drawn from the same geometry as brand/svg. Decorative here: the surrounding
 // link or text carries the accessible name, so the SVGs are hidden from assistive technology.

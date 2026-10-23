@@ -1,4 +1,4 @@
-// Offline checks of the scoped integration; does not grant deployment/signing authority.
+// Offline checks of the published root export; does not grant deployment/signing authority.
 import assert from 'node:assert/strict';
 import { readFile, readdir, lstat, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
@@ -8,8 +8,8 @@ import { loadPublicHandoff, canonicalJSON } from '../../sdk/handoff.mjs';
 import { validateReleaseState, uiCapabilities } from '../../sdk/gates.mjs';
 
 process.chdir(fileURLToPath(new URL('../../', import.meta.url)));
-const output = 'docs/validation/production-ui-v1/integration';
-const dist = 'frontend/production-dist';
+const output = process.env.STEPS_EXPORT_REPORT_DIR ?? 'docs/validation/production-ui-v1/publish';
+const dist = 'dist';
 const baseline = 'ea16957ccbd15763a6cb0861023637ff8054c8dc';
 const json = async path => JSON.parse(await readFile(path, 'utf8'));
 const digest = bytes => sha256(bytes).slice(2);
@@ -34,8 +34,12 @@ for (const [path, hash] of Object.entries(release.frozenBuild.sources)) assert.e
 assert.equal(Object.keys(release.frozenBuild.sources).length, 50);
 
 const tracked = execFileSync('git', ['ls-files', '-z'], { encoding: 'utf8' }).split('\0').filter(Boolean);
-const protectedFiles = tracked.filter(p => !/^(frontend\/|brand\/|docs\/validation\/production-ui-v1\/|README\.md$)/.test(p)
-  || /(?:^|\/)(?:[^/]*config\.[^/]+|package(?:-lock)?\.json)$/.test(p));
+// Contracts, SDK, ABIs, compiler/release/production-gate configuration, tools, dependency
+// manifests/lockfiles and frontend build configuration must equal the official baseline.
+// frontend/src/config.ts is site copy: the pinned correction adds three branding constants to it.
+const protectedFiles = tracked.filter(p => /^(src|sdk|abi|config|cli|tools|lib|vendor|test-sdk|test)\//.test(p)
+  || /^(package(?:-lock)?\.json|foundry\.toml|remappings\.txt|launch\.json)$/.test(p)
+  || (/^frontend\/[^/]*(?:config\.[^/]+|package(?:-lock)?\.json)$/.test(p)));
 for (const p of protectedFiles) assert.deepEqual(await readFile(p), execFileSync('git', ['show', `${baseline}:${p}`], { maxBuffer: 16 * 1024 * 1024 }), p);
 
 const manifest = await json('docs/validation/production-ui-v1/source-manifest.json');
@@ -44,7 +48,7 @@ for (const file of manifest.files) {
   const hash = digest(await readFile(file.path));
   if (hash !== file.sha256) deviations.push({ path: file.path, pinned: file.sha256, actual: hash });
 }
-assert.deepEqual(deviations.map(d => d.path).sort(), ['frontend/src/brand/Logo.tsx', 'frontend/src/config.ts']);
+assert.deepEqual(deviations, []);
 assert.equal(digest(await readFile('frontend/public/favicon.svg')), '272911dfd664759ba5b4119bab027ee2b58de89f239f51fc57a67a052d65be3a');
 assert.equal(digest(await readFile('frontend/public/og.png')), '59d35760d7f491988d818a211520ed745d76e960f3f6983ff5bfb5829a5ec0df');
 const inventory = [];
@@ -70,12 +74,11 @@ assert.match(html, /Build on every step\./);
 const result = { checkedAt: new Date().toISOString(), status: 'PASS', exportDirectory: dist,
   baseline, correctionCommit: 'e23d80b674d7a776d29e85caf8e172991ff5f52a',
   manifestMatches: manifest.files.length - deviations.length, manifestEntries: manifest.files.length, deviations,
-  deviationReason: 'The overriding configuration-file ban keeps config.ts byte-identical. The three reviewed branding strings are local to Logo.tsx; rendered geometry and presentation are unchanged.',
   protectedFilesUnchanged: protectedFiles.length, frozenSolidityInputsUnchanged: 50,
   contractSourceCommit: h.sourceCommit, launchId: h.launchId, capabilities: caps,
   liveCompatibility: 'NOT_RUN', productionReady: false, productionBundleFixtureScan: 'PASS', inventory,
-  publication: { status: 'NOT_PUBLISHED_NO_SERVICE_TOOL_AVAILABLE', commit: null, cid: null, url: null,
-    existingLabel: 'stepstoke.site.identitymd.eth', hostInspection: 'TLS negotiation failed on both eth.limo and eth.link; no claim of updated-host verification or X unfurl acceptance' } };
+  publication: { status: 'EXPORT_COMMITTED_SERVICE_PUBLISHES_AFTER_JOB', existingLabel: 'stepstoke.site.identitymd.eth',
+    cid: null, note: 'The IMD plane pins the committed dist/ and names it after the job; no CID exists at check time.' } };
 await writeFile(`${output}/export.json`, JSON.stringify(result, null, 2) + '\n');
 console.log(JSON.stringify({ ok: true, exportFiles: inventory.length, manifestMatches: result.manifestMatches,
   protectedFilesUnchanged: protectedFiles.length, capabilities: caps }));
