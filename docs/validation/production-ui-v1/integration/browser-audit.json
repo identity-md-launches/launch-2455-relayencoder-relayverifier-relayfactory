@@ -1,0 +1,98 @@
+{
+  "chromium-desktop-deployment-details-preserve-the-authenticated-handoff-and-closed-payment-gates": {
+    "test": "deployment details preserve the authenticated handoff and closed payment gates",
+    "engine": "chromium-desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "status": "passed",
+    "horizontalOverflow": 0,
+    "pageErrors": [],
+    "externalAttempts": [],
+    "httpErrors": [],
+    "unexpectedConsoleErrors": [],
+    "expectedSecurityBlocks": [],
+    "console": []
+  },
+  "chromium-mobile-deployment-details-preserve-the-authenticated-handoff-and-closed-payment-gates": {
+    "test": "deployment details preserve the authenticated handoff and closed payment gates",
+    "engine": "chromium-mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "status": "passed",
+    "horizontalOverflow": 0,
+    "pageErrors": [],
+    "externalAttempts": [],
+    "httpErrors": [],
+    "unexpectedConsoleErrors": [],
+    "expectedSecurityBlocks": [],
+    "console": []
+  },
+  "chromium-desktop-production-entry-is-branded-and-points-only-to-real-project-browsing": {
+    "test": "production entry is branded and points only to real project browsing",
+    "engine": "chromium-desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "status": "passed",
+    "horizontalOverflow": 0,
+    "pageErrors": [],
+    "externalAttempts": [],
+    "httpErrors": [],
+    "unexpectedConsoleErrors": [],
+    "expectedSecurityBlocks": [],
+    "console": []
+  },
+  "chromium-narrow-production-entry-is-branded-and-points-only-to-real-project-browsing": {
+    "test": "production entry is branded and points only to real project browsing",
+    "engine": "chromium-narrow",
+    "viewport": {
+      "width": 320,
+      "height": 844
+    },
+    "status": "passed",
+    "horizontalOverflow": 0,
+    "pageErrors": [],
+    "externalAttempts": [],
+    "httpErrors": [],
+    "unexpectedConsoleErrors": [],
+    "expectedSecurityBlocks": [],
+    "console": []
+  },
+  "chromium-narrow-deployment-details-preserve-the-authenticated-handoff-and-closed-payment-gates": {
+    "test": "deployment details preserve the authenticated handoff and closed payment gates",
+    "engine": "chromium-narrow",
+    "viewport": {
+      "width": 320,
+      "height": 844
+    },
+    "status": "passed",
+    "horizontalOverflow": 0,
+    "pageErrors": [],
+    "externalAttempts": [],
+    "httpErrors": [],
+    "unexpectedConsoleErrors": [],
+    "expectedSecurityBlocks": [],
+    "console": []
+  },
+  "chromium-mobile-production-entry-is-branded-and-points-only-to-real-project-browsing": {
+    "test": "production entry is branded and points only to real project browsing",
+    "engine": "chromium-mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "status": "passed",
+    "horizontalOverflow": 0,
+    "pageErrors": [],
+    "externalAttempts": [],
+    "httpErrors": [],
+    "unexpectedConsoleErrors": [],
+    "expectedSecurityBlocks": [],
+    "console": []
+  }
+}

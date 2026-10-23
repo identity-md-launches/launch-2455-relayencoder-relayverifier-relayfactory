@@ -1,3 +1,7 @@
+> Current frontend correction: [production UI validation](docs/validation/production-ui-v1/README.md). Joined Steps branding is integrated; Demo and Components showcase pages are removed. The following older release documentation is historical where it refers to those routes. Contracts are unchanged; payments remain disabled.
+
+Current scoped integration: [results and limits](docs/validation/production-ui-v1/INTEGRATION.md). The rebuilt, authenticated export is `frontend/production-dist/`; root `dist/` is unchanged historical output. See [frontend instructions](frontend/README.md) for offline export inspection, source build/import and verification. No publication commit, new CID or updated-host acceptance is available from this worker session. The existing `stepstoke.site.identitymd.eth` label must be retained by the official service publisher.
+
 # STEPS · Stepstoke
 
 STEPS is an Open Workshop where anyone can create a fixed-goal project, propose a bounded job, and separately fund one Intake execution. A Branch records authenticated results as checkpoints so people can inspect, continue, or fork a selected historical output. Official X: https://x.com/stepstoke (no post is part of this release).

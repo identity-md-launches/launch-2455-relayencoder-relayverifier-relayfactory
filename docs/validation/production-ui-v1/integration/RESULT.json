@@ -1,0 +1,63 @@
+{
+  "status": "LOCAL_INTEGRATION_VALIDATED_NOT_PUBLISHED",
+  "checks": {
+    "typecheck": "PASS",
+    "unitTests": {
+      "passed": 100,
+      "failed": 0
+    },
+    "productionBuild": "PASS",
+    "productionBrowserTests": {
+      "passed": 6,
+      "failed": 0,
+      "viewports": [
+        1440,
+        390,
+        320
+      ]
+    },
+    "anonymousBrowserRpcChecks": {
+      "passed": 19,
+      "failed": 0
+    },
+    "deployment": "VERIFIED_DEPLOYMENT",
+    "protectedFilesUnchanged": 280,
+    "frozenSolidityInputsUnchanged": 50,
+    "exportAssetIntegrity": "PASS",
+    "productionBundleFixtureScan": "PASS",
+    "bundleRepair": "PASS; see bundle-repair.json"
+  },
+  "manifestMatches": 96,
+  "manifestEntries": 98,
+  "deviations": [
+    {
+      "path": "frontend/src/brand/Logo.tsx",
+      "pinned": "eeab2de6bdb402aa0db4bf984fa5929c6df1c9a1443da0846f7a2a349e407b93",
+      "actual": "a2a09e36218dfd84ba35e0fad38c2c9993944f76ae75b144332eeb5667c5ed8b"
+    },
+    {
+      "path": "frontend/src/config.ts",
+      "pinned": "b30958a46c9a541073f4ff51041f07495fe519f32727e8778c0ad81f69f0a58b",
+      "actual": "45460b0dc4bbbe93e7bd35e26548ef9f754cd20b38f87bad7f30d6b711bab868"
+    }
+  ],
+  "publication": {
+    "status": "NOT_PUBLISHED_NO_SERVICE_TOOL_AVAILABLE",
+    "commit": null,
+    "cid": null,
+    "url": null,
+    "existingLabel": "stepstoke.site.identitymd.eth",
+    "hostInspection": "TLS negotiation failed on both eth.limo and eth.link; no claim of updated-host verification or X unfurl acceptance"
+  },
+  "productionReady": false,
+  "liveCompatibility": "NOT_RUN",
+  "limits": [
+    "Official service publication unavailable; no resulting commit or CID.",
+    "Both existing-name HTTPS gateway probes failed TLS negotiation.",
+    "No hosted-origin browser acceptance or X unfurl test.",
+    "Browser and RPC observations are local worker results, not independent certification."
+  ],
+  "historicalChecks": {
+    "offlineInstall": "PASS: 146 locked packages; offline cache only"
+  }
+}

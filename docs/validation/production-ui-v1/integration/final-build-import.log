@@ -1,0 +1,18 @@
+
+> cto-relay-station-w1@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.json
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 2007 modules transformed.
+rendering chunks...
+computing gzip size...
+production-dist/index.html                   1.63 kB │ gzip:   0.62 kB
+production-dist/assets/index-DQT9J7ta.css   19.19 kB │ gzip:   4.24 kB
+production-dist/assets/dist-Vcdp1_M2.js    102.69 kB │ gzip:  33.79 kB
+production-dist/assets/index-BfsdXKuP.js   732.63 kB │ gzip: 231.83 kB
+
+[INEFFECTIVE_DYNAMIC_IMPORT] ../sdk/deployment.mjs is dynamically imported by ../sdk/config.mjs but also statically imported by src/domain/sdk.ts, dynamic import will not move module into another chunk.
+
+✓ built in 872ms
+{"export":"frontend/production-dist","launchId":"cad0c789-2611-4392-bec0-456cb8e57d2c","assets":15,"productionReady":false,"liveCompatibility":"NOT_RUN","published":false}

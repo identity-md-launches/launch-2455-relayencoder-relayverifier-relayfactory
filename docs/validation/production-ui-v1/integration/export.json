@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-10-23T03:23:48.527Z",
+  "status": "PASS",
+  "exportDirectory": "frontend/production-dist",
+  "baseline": "ea16957ccbd15763a6cb0861023637ff8054c8dc",
+  "correctionCommit": "e23d80b674d7a776d29e85caf8e172991ff5f52a",
+  "manifestMatches": 96,
+  "manifestEntries": 98,
+  "deviations": [
+    {
+      "path": "frontend/src/brand/Logo.tsx",
+      "pinned": "eeab2de6bdb402aa0db4bf984fa5929c6df1c9a1443da0846f7a2a349e407b93",
+      "actual": "a2a09e36218dfd84ba35e0fad38c2c9993944f76ae75b144332eeb5667c5ed8b"
+    },
+    {
+      "path": "frontend/src/config.ts",
+      "pinned": "b30958a46c9a541073f4ff51041f07495fe519f32727e8778c0ad81f69f0a58b",
+      "actual": "45460b0dc4bbbe93e7bd35e26548ef9f754cd20b38f87bad7f30d6b711bab868"
+    }
+  ],
+  "deviationReason": "The overriding configuration-file ban keeps config.ts byte-identical. The three reviewed branding strings are local to Logo.tsx; rendered geometry and presentation are unchanged.",
+  "protectedFilesUnchanged": 280,
+  "frozenSolidityInputsUnchanged": 50,
+  "contractSourceCommit": "751f3901d4453e1477828e4f7ef0d6af8bc03485",
+  "launchId": "cad0c789-2611-4392-bec0-456cb8e57d2c",
+  "capabilities": {
+    "read": true,
+    "createBranch": false,
+    "propose": false,
+    "sponsor": false,
+    "fork": false,
+    "bindingRetry": false,
+    "realWalletSigning": false
+  },
+  "liveCompatibility": "NOT_RUN",
+  "productionReady": false,
+  "productionBundleFixtureScan": "PASS",
+  "inventory": [
+    {
+      "path": "abi/RelayEncoder.json",
+      "sha256": "7f7cc7133fb159f4ae248c9c903855ea506cf154e8e6017680075e3c50d9153a",
+      "bytes": 7927
+    },
+    {
+      "path": "abi/RelayFactory.json",
+      "sha256": "57287ca9e538a407bbfbd14dabc237bb93e3d6750c232c9c04b575751d9bf5e3",
+      "bytes": 6017
+    },
+    {
+      "path": "abi/RelayVerifier.json",
+      "sha256": "788539b92c802abeb9a461146b9e9b7585c5e91802e49640704532b3bea7f157",
+      "bytes": 5582
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "sha256": "a00d8ff12f6f41d59314b036258b868569c4bc630fe3a505429798a31074dd16",
+      "bytes": 2842
+    },
+    {
+      "path": "assets/dist-Vcdp1_M2.js",
+      "sha256": "0000805c199e3aeefe7400de7b5a8d07fd6171a901f13e47a00abc717679da3c",
+      "bytes": 102692
+    },
+    {
+      "path": "assets/index-BfsdXKuP.js",
+      "sha256": "f1278c8bf374242cce665ff2d403d00f73215f6ab0b7859fd46738776802168c",
+      "bytes": 732634
+    },
+    {
+      "path": "assets/index-DQT9J7ta.css",
+      "sha256": "0c2aee55b481308ae9298d5303b46bb8fed4d90bbb5d8239e49324e02c2a0faf",
+      "bytes": 19199
+    },
+    {
+      "path": "deployment-evidence.json",
+      "sha256": "06fccb88497b58f9dbc53835695d289ac2a0bfba625e4299e07ee19f22a4f6a4",
+      "bytes": 13946
+    },
+    {
+      "path": "favicon-16.png",
+      "sha256": "8b41d111b8e0d5da2a4c6da8986c3d3d83699b915e5e1a9de3e870b0177a44a2",
+      "bytes": 293
+    },
+    {
+      "path": "favicon-32.png",
+      "sha256": "9cae5baf49272002f99f76088b4c89dca8ab5187b05d5188b100df0ab19e719e",
+      "bytes": 495
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "272911dfd664759ba5b4119bab027ee2b58de89f239f51fc57a67a052d65be3a",
+      "bytes": 374
+    },
+    {
+      "path": "imd-deployment.json",
+      "sha256": "1fcb3ba8ce881f05fd35e287d24190f038419157219aa38afa31ddff3124d0ed",
+      "bytes": 4433
+    },
+    {
+      "path": "index.html",
+      "sha256": "4dc38a674a0e1ca183013005d78052ebb123412978e3e64ba1877e2afcba8b95",
+      "bytes": 1630
+    },
+    {
+      "path": "og.png",
+      "sha256": "59d35760d7f491988d818a211520ed745d76e960f3f6983ff5bfb5829a5ec0df",
+      "bytes": 18537
+    },
+    {
+      "path": "og.svg",
+      "sha256": "c23e32977150299a1176831b2142fcd7ae7e042ea8c27e5a9ce4bfda68a515b0",
+      "bytes": 48154
+    },
+    {
+      "path": "public-read-transport.json",
+      "sha256": "8c64b7f1ad54f3aa7362b993ef7ef580af430892d7d6d12dd35c2f1bf57b8b4b",
+      "bytes": 127
+    }
+  ],
+  "publication": {
+    "status": "NOT_PUBLISHED_NO_SERVICE_TOOL_AVAILABLE",
+    "commit": null,
+    "cid": null,
+    "url": null,
+    "existingLabel": "stepstoke.site.identitymd.eth",
+    "hostInspection": "TLS negotiation failed on both eth.limo and eth.link; no claim of updated-host verification or X unfurl acceptance"
+  }
+}

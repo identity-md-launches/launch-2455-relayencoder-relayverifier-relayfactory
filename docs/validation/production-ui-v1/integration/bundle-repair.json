@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-10-23T03:24:38.926488+00:00",
+  "status": "PASS",
+  "repairBaselineCommit": "3a76aa65a77c5510fed470f76b6abf36ecf4be37",
+  "officialWebsiteBaselineCommit": "ea16957ccbd15763a6cb0861023637ff8054c8dc",
+  "scope": "Remove redundant npm build cache and dedicated installer; update current documentation. Production source and export bytes preserved.",
+  "removedNpmArchives": 143,
+  "removedNpmArchiveBytes": 44132670,
+  "uploadLimitBytes": 8388608,
+  "checks": {
+    "typecheck": "PASS",
+    "unitTests": {
+      "passed": 100,
+      "failed": 0
+    },
+    "productionBuild": "PASS",
+    "authenticPostBuildHandoffImport": "PASS: existing SDK verified actual public Ethereum deployment",
+    "productionBrowserTests": {
+      "passed": 6,
+      "failed": 0,
+      "viewportWidths": [
+        1440,
+        390,
+        320
+      ],
+      "report": "bundle-repair-browser.json"
+    },
+    "runtimeExportByteEqualityToRepairBaseline": "PASS: all 16 files",
+    "protectedFilesUnchanged": 280,
+    "frozenSolidityInputsUnchanged": 50,
+    "manifestMatches": 96,
+    "manifestEntries": 98,
+    "configurationException": "Existing config.ts/Logo.tsx deviations remain documented in export.json; no configuration was edited.",
+    "closedPaymentGates": "PASS",
+    "fixtureMarkerScan": "PASS"
+  },
+  "sourceHashes": "source-hashes.json",
+  "finalAssets": [
+    {
+      "path": "abi/RelayEncoder.json",
+      "bytes": 7927,
+      "sha256": "7f7cc7133fb159f4ae248c9c903855ea506cf154e8e6017680075e3c50d9153a"
+    },
+    {
+      "path": "abi/RelayFactory.json",
+      "bytes": 6017,
+      "sha256": "57287ca9e538a407bbfbd14dabc237bb93e3d6750c232c9c04b575751d9bf5e3"
+    },
+    {
+      "path": "abi/RelayVerifier.json",
+      "bytes": 5582,
+      "sha256": "788539b92c802abeb9a461146b9e9b7585c5e91802e49640704532b3bea7f157"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 2842,
+      "sha256": "a00d8ff12f6f41d59314b036258b868569c4bc630fe3a505429798a31074dd16"
+    },
+    {
+      "path": "assets/dist-Vcdp1_M2.js",
+      "bytes": 102692,
+      "sha256": "0000805c199e3aeefe7400de7b5a8d07fd6171a901f13e47a00abc717679da3c"
+    },
+    {
+      "path": "assets/index-BfsdXKuP.js",
+      "bytes": 732634,
+      "sha256": "f1278c8bf374242cce665ff2d403d00f73215f6ab0b7859fd46738776802168c"
+    },
+    {
+      "path": "assets/index-DQT9J7ta.css",
+      "bytes": 19199,
+      "sha256": "0c2aee55b481308ae9298d5303b46bb8fed4d90bbb5d8239e49324e02c2a0faf"
+    },
+    {
+      "path": "deployment-evidence.json",
+      "bytes": 13946,
+      "sha256": "06fccb88497b58f9dbc53835695d289ac2a0bfba625e4299e07ee19f22a4f6a4"
+    },
+    {
+      "path": "favicon-16.png",
+      "bytes": 293,
+      "sha256": "8b41d111b8e0d5da2a4c6da8986c3d3d83699b915e5e1a9de3e870b0177a44a2"
+    },
+    {
+      "path": "favicon-32.png",
+      "bytes": 495,
+      "sha256": "9cae5baf49272002f99f76088b4c89dca8ab5187b05d5188b100df0ab19e719e"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 374,
+      "sha256": "272911dfd664759ba5b4119bab027ee2b58de89f239f51fc57a67a052d65be3a"
+    },
+    {
+      "path": "imd-deployment.json",
+      "bytes": 4433,
+      "sha256": "1fcb3ba8ce881f05fd35e287d24190f038419157219aa38afa31ddff3124d0ed"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1630,
+      "sha256": "4dc38a674a0e1ca183013005d78052ebb123412978e3e64ba1877e2afcba8b95"
+    },
+    {
+      "path": "og.png",
+      "bytes": 18537,
+      "sha256": "59d35760d7f491988d818a211520ed745d76e960f3f6983ff5bfb5829a5ec0df"
+    },
+    {
+      "path": "og.svg",
+      "bytes": 48154,
+      "sha256": "c23e32977150299a1176831b2142fcd7ae7e042ea8c27e5a9ce4bfda68a515b0"
+    },
+    {
+      "path": "public-read-transport.json",
+      "bytes": 127,
+      "sha256": "8c64b7f1ad54f3aa7362b993ef7ef580af430892d7d6d12dd35c2f1bf57b8b4b"
+    }
+  ],
+  "productionReady": false,
+  "liveCompatibility": "NOT_RUN",
+  "publication": {
+    "status": "NOT_PUBLISHED_NO_SERVICE_TOOL_AVAILABLE",
+    "existingLabel": "stepstoke.site.identitymd.eth",
+    "newCommit": null,
+    "newCid": null
+  },
+  "limits": [
+    "The prebuilt complete export supports offline inspection. Source rebuilds require the existing development dependencies; registry archives are intentionally excluded to meet the upload limit.",
+    "No hosted-origin or X unfurl acceptance claimed."
+  ],
+  "changedFilePayloadBytes": 1956167,
+  "payloadMeasurement": "Sum of current added/modified files relative to official website baseline, including new evidence; excludes unchanged protected dependencies and deleted cache files."
+}

@@ -1,0 +1,33 @@
+
+> cto-relay-station-w1@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.5 frontend
+
+3:12:26 AM [vite] (ssr) Failed to load source map for vendor/ethers/ethers.mjs.
+Error: An error occurred while trying to read the map file at ethers.js.map
+Error: ENOENT: no such file or directory, open 'vendor/ethers/ethers.js.map'
+    at Object.readFileSync (node:fs:483:20)
+    at file://frontend/node_modules/vite/dist/node/chunks/node.js:17690:13
+    at readFromFileMap (file://frontend/node_modules/vite/dist/node/chunks/node.js:17388:13)
+    at exports.fromMapFileComment (file://frontend/node_modules/vite/dist/node/chunks/node.js:17483:12)
+    at exports.fromMapFileSource (file://frontend/node_modules/vite/dist/node/chunks/node.js:17494:22)
+    at extractSourcemapFromFile (file://frontend/node_modules/vite/dist/node/chunks/node.js:17676:87)
+    at loadAndTransform (file://frontend/node_modules/vite/dist/node/chunks/node.js:20150:22)
+3:12:27 AM [vite] (client) Failed to load source map for vendor/ethers/ethers.mjs.
+Error: An error occurred while trying to read the map file at ethers.js.map
+Error: ENOENT: no such file or directory, open 'vendor/ethers/ethers.js.map'
+    at Object.readFileSync (node:fs:483:20)
+    at file://frontend/node_modules/vite/dist/node/chunks/node.js:17690:13
+    at readFromFileMap (file://frontend/node_modules/vite/dist/node/chunks/node.js:17388:13)
+    at exports.fromMapFileComment (file://frontend/node_modules/vite/dist/node/chunks/node.js:17483:12)
+    at exports.fromMapFileSource (file://frontend/node_modules/vite/dist/node/chunks/node.js:17494:22)
+    at extractSourcemapFromFile (file://frontend/node_modules/vite/dist/node/chunks/node.js:17676:87)
+    at loadAndTransform (file://frontend/node_modules/vite/dist/node/chunks/node.js:20150:22)
+
+ Test Files  7 passed (7)
+      Tests  100 passed (100)
+   Start at  03:12:25
+   Duration  4.88s (import 29%, environment 28%, transform 26%, tests 13%, setup 4%)
+
